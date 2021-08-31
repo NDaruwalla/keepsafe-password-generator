@@ -1,82 +1,95 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
-    line-height: 1.5;
-    background-image: url("../img/safe.jpg");
-    background-size: cover;
-    background-position: center;
-    /* background-blend-mode: soft-light; */
-    min-height: 100vh;
-    /* opacity: 75%; */
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
+  box-sizing: border-box;
+}
 
-  .banner {
-    height: 125px;
-    background-color: rgb(8, 9, 12);
-    margin-top: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 
-  .title {
-    color: #917898;
-      text-align: center;
-      padding-top: 20px; 
-      font-size: 3rem;
-      text-shadow: 0 0 4px #4c394f;   
-   }
+  line-height: 1.5;
+  background-image: url("../img/safe.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-blend-mode: soft-light; */
+  min-height: 100vh;
+  /* opacity: 75%; */
+}
 
-  .resultBox {
-      width: 500px;
-      height: 150px;
-      margin: auto;
-      border-style: solid;
-      border-color: #333333;
-      margin-top: 90px;
-      color: #917898;
-      background-color: #2e1a1e;;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
-  .button-container {
-    margin-top: 50px;
-    text-align: center;
-  }
+p {
+  margin: 0;
+}
 
-  .button {
-    background-color: #4c394f; 
-    border: none;
-    /* color: #d5ddef; */
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  } 
+.banner {
+  height: 175px;
+  background-color: rgb(8, 9, 12);
+  margin-top: 0;
+}
 
-  .button:hover {
-    background-color: #917898; /* Green */
-    border: none;
-    color: #bcb8ce;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  } 
+.title {
+  color: #917898;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 80px;
+  /* text-shadow: 0 0 4px #4c394f; */
+  font-family: "Black Ops One", cursive;
+  padding-bottom: 0%;
+}
+
+.subTitle {
+  color: #4c394f;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 1.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+.resultBox {
+  width: 500px;
+  height: 150px;
+  margin: auto;
+  border-style: solid;
+  border-color: #333333;
+  margin-top: 90px;
+  color: #917898;
+  background-color: #271e29;
+}
+
+.button-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.button {
+  background-color: #4c394f;
+  border: none;
+  /* color: #d5ddef; */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #917898;
+  /* Green */
+  border: none;
+  color: #bcb8ce;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
