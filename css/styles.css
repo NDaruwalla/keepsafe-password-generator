@@ -2,8 +2,6 @@
     box-sizing: border-box;
   }
   
-
-  
   body {
     margin: 0;
     padding: 0;
@@ -13,8 +11,9 @@
     background-image: url("../img/safe.jpg");
     background-size: cover;
     background-position: center;
-    background-blend-mode: soft-light;
+    /* background-blend-mode: soft-light; */
     min-height: 100vh;
+    /* opacity: 75%; */
   }
   
   h1,
@@ -28,4 +27,38 @@
   
   p {
     margin: 0;
+  }
+
+  .title {
+      color: #1d1d1d;
+      text-align: center;
+      margin-top: 25px;
+      font-size: 3rem;
+  
+  }
+
+  .resultBox {
+      width: 500px;
+      height: 150px;
+      margin: auto;
+      border-style: solid;
+      border-color: #333333;
+      margin-top: 100px;
+      background-color: #9a9a9a;;
+  }
+
+  .button-container {
+    margin-top: 50px;
+    text-align: center;
+ }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }

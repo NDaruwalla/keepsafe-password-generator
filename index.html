@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keepsafe</title>
+
+    <!-- external links -->
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 </head>
@@ -13,8 +16,27 @@
     <header>
         <h1 class="title">Keepsafe Password Generator</h1>
     </header>
+    <div class="container">
 
-    
+
+<div class="resultBox">
+        <!-- button for password copy -->
+        <input type="text" value="your password will be generated here" id="myInput">
+    </div>
+        <div class="button-container">
+            <button onclick="copyPassword()">Copy Password</button>
+            <button>Generate Password</button>
+        </div>
+    </div>
+    </div>
+
+
+
     <footer></footer>
+
+    <!-- JavaScript files -->
+    <script src="copy-button.js"></script>
+    <script src="generate-button.js"></script>
 </body>
+
 </html>
