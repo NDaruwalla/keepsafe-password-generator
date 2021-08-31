@@ -8,35 +8,42 @@
     <title>Keepsafe</title>
 
     <!-- external links -->
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/button.css" />
 </head>
 
 <body>
     <header>
+        <div  class="banner">
         <h1 class="title">Keepsafe Password Generator</h1>
+    </div>
     </header>
     <div class="container">
 
 
 <div class="resultBox">
-        <!-- button for password copy -->
-        <input type="text" value="your password will be generated here" id="myInput">
-    </div>
+     
+   
+</div>
         <div class="button-container">
-            <button onclick="copyPassword()">Copy Password</button>
-            <button>Generate Password</button>
+               <!-- button for password copy -->
+            <button class="button" onclick="copyPassword()">Copy Password</button>
+    
+            <!-- button for generate password -->
+            <button class="button">Generate Password</button>
         </div>
+
     </div>
-    </div>
+
 
 
 
     <footer></footer>
 
     <!-- JavaScript files -->
-    <script src="copy-button.js"></script>
-    <script src="generate-button.js"></script>
+    <script src="./assets/js/copy-button.js"></script>
+    <script src="./assets/js/generate-button.js"></script>
 </body>
 
 </html>

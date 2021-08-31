@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: ;
+   
     line-height: 1.5;
     background-image: url("../img/safe.jpg");
     background-size: cover;
@@ -29,13 +29,19 @@
     margin: 0;
   }
 
-  .title {
-      color: #1d1d1d;
-      text-align: center;
-      margin-top: 25px;
-      font-size: 3rem;
-  
+  .banner {
+    height: 125px;
+    background-color: rgb(8, 9, 12);
+    margin-top: 0;
   }
+
+  .title {
+    color: #917898;
+      text-align: center;
+      padding-top: 20px; 
+      font-size: 3rem;
+      text-shadow: 0 0 4px #4c394f;   
+   }
 
   .resultBox {
       width: 500px;
@@ -43,22 +49,34 @@
       margin: auto;
       border-style: solid;
       border-color: #333333;
-      margin-top: 100px;
-      background-color: #9a9a9a;;
+      margin-top: 90px;
+      color: #917898;
+      background-color: #2e1a1e;;
   }
 
   .button-container {
     margin-top: 50px;
     text-align: center;
- }
+  }
 
   .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4c394f; 
     border: none;
-    color: white;
+    /* color: #d5ddef; */
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+  } 
+
+  .button:hover {
+    background-color: #917898; /* Green */
+    border: none;
+    color: #bcb8ce;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  } 
