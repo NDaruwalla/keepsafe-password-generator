@@ -116,7 +116,10 @@ function getOptions () {
  
 
 // Create a conditional statement to check if password length is a number; If it evaluates as false, return an alert for the user to provide a number
- 
+if (isNaN(length) === true) {
+    alert('You must enter a number for the password length.');
+    return;
+}
 
 }
 getOptions();
