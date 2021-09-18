@@ -2,6 +2,11 @@
 
 // Create arrays to be included in password generation including arrays for: special characters, numeric characters, lowercase characters, uppercase characters
 
+
+// import {getOptions} from './prompt'
+
+
+
 let specialChars = [
     '@',
     '%',
@@ -99,12 +104,22 @@ let upperCaseChars = [
     'Z'
 ];
 
-// Then create function that will prompt the user for password options
 
-// Create a variable to store the length of the password from the user input
+
+// Then create function that will prompt the user for password options
+function getOptions () {
+    // Create a variable to store the length of the password from the user input
+    let length = parseInt(
+        prompt('How many characters would you like in your password?')
+    );
+
+ 
 
 // Create a conditional statement to check if password length is a number; If it evaluates as false, return an alert for the user to provide a number
+ 
 
+}
+getOptions();
 // Create a conditional statement to check if the password length is at least 8 characters long; If it evaluates as false, return an alert for the user to enter a password length of at least 8 characters
 
 // Create a conditional statement to check if the password length is less than 128 characters long. If it evaluates as false, return an alert for the user to enter a password length of less than 128 characters long
