@@ -5,9 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-image: url("../img/safe.jpg");
   background-size: cover;
@@ -40,9 +38,9 @@ p {
   color: #917898;
   text-align: center;
   padding-top: 5px;
-  font-size: 80px;
+  font-size: 70px;
   /* text-shadow: 0 0 4px #4c394f; */
-  font-family: "Black Ops One", cursive;
+  font-family: 'Zen Dots', cursive;
   padding-bottom: 0%;
 }
 
@@ -51,8 +49,7 @@ p {
   text-align: center;
   padding-top: 0px;
   font-size: 1.5em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .resultBox {
