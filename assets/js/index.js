@@ -2,6 +2,103 @@
 
 // Create arrays to be included in password generation including arrays for: special characters, numeric characters, lowercase characters, uppercase characters
 
+let specialChars = [
+    '@',
+    '%',
+    '+',
+    '\\',
+    '/',
+    "'",
+    '!',
+    '#',
+    '$',
+    '^',
+    '?',
+    ':',
+    ',',
+    ')',
+    '(',
+    '}',
+    '{',
+    ']',
+    '[',
+    '~',
+    '-',
+    '_',
+    '.' 
+];
+
+let numericChars = [
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9'
+];
+
+let lowerCaseChars = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z'
+];
+
+let upperCaseChars = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z'
+];
+
 // Then create function that will prompt the user for password options
 
 // Create a variable to store the length of the password from the user input
