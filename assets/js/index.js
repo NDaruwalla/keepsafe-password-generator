@@ -127,12 +127,22 @@ if (length < 8) {
     alert('The password length must be 8 or more characters.');
     return;
 }
+// Create a conditional statement to check if the password length is less than 128 characters long. If it evaluates as false, return an alert for the user to enter a password length of less than 128 characters long
+
+if (length > 128) {
+    alert('The password must be no more than 128 characters.')
+    return;
+}
+
+// Create a variable to store a boolean to include lowercase characters
+let hasSpecialChars = confirm (
+    'Would you like to include special characters? (If yes, click ok.)'
+);
 
 }
 getOptions();
 
 
-// Create a conditional statement to check if the password length is less than 128 characters long. If it evaluates as false, return an alert for the user to enter a password length of less than 128 characters long
 
 // Create a variable to store a boolean to include lowercase characters
 
