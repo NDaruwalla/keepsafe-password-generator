@@ -121,9 +121,16 @@ if (isNaN(length) === true) {
     return;
 }
 
+// Create a conditional statement to check if the password length is at least 8 characters long; If it evaluates as false, return an alert for the user to enter a password length of at least 8 characters
+
+if (length < 8) {
+    alert('The password length must be 8 or more characters.');
+    return;
+}
+
 }
 getOptions();
-// Create a conditional statement to check if the password length is at least 8 characters long; If it evaluates as false, return an alert for the user to enter a password length of at least 8 characters
+
 
 // Create a conditional statement to check if the password length is less than 128 characters long. If it evaluates as false, return an alert for the user to enter a password length of less than 128 characters long
 
