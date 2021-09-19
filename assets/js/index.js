@@ -207,6 +207,16 @@ function generatePassword () {
         includedTypeChars = includedTypeChars.concat(numericChars);
         mustHaveChars.push(getRandomChar(numericChars));
     }
+
+    if (options.hasUppercaseChars) {
+        includedTypeChars = includedTypeChars.concat(uppercaseChars);
+        mustHaveChars.push(getRandomChar(uppercaseChars));
+    }
+
+    if (options.hasLowercaseChars) {
+        includedTypeChars = includedTypeChars.concat(lowercaseChars);
+        mustHaveChars.push(getRandomChar(lowercaseChars));
+    }
 }
 
 
