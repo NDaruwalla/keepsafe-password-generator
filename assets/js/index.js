@@ -171,7 +171,14 @@ let userSelections = {
 };
 
 return userSelections;
+}
 
+// Create a function for selecting a random characters from an array
+function getRandomChar(array) {
+    let randomIndex = Math.floor(math.random() * array.length);
+    let randomChar = array[randomIndex];
+
+    return randomChar;
 }
 getOptions();
 
@@ -185,7 +192,7 @@ getOptions();
 
 
 
-// Create a function for selecting a random element from an array
+
 
 // Create a function to generate the password that includes the user input; create a variable to store the password as it is being concatenated
 
