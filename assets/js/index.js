@@ -161,6 +161,7 @@ if (
     return;
 }
 
+
 // Create an object to store the user inputs
 let userSelections = {
     length: length,
@@ -171,6 +172,7 @@ let userSelections = {
 };
 
 return userSelections;
+
 }
 
 // Create a function for selecting a random characters from an array
@@ -182,7 +184,7 @@ function getRandomChar(array) {
 }
 
 // Create a function to generate the password that includes the user input; create a variable to store the password as it is being concatenated
-function generatePassword {
+function generatePassword () {
 
    
     let options = getOptions();
@@ -194,12 +196,17 @@ function generatePassword {
 
     // Create an array to contain one of each type of chosen character to ensure each will be used
     let mustHaveChars = [];
+
+    // Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters
+    if (options.hasSpecialChars) {
+        includedTypeChars = includedTypeChars.concat(specialChars);
+        mustHaveChars.push(getRandom(specialChars));
+    }
 }
 
-getOptions();
 
 
-// Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters
+
 
 // Create a for loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
 
