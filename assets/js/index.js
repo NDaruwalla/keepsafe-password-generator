@@ -136,8 +136,30 @@ if (length > 128) {
 
 // Create a variable to store a boolean to include lowercase characters
 let hasSpecialChars = confirm (
-    'Would you like to include special characters? (If yes, click ok.)'
+    'Would you like to include SPECIAL characters? (If yes, click ok.)'
 );
+
+let hasNumericChars = confirm (
+    'Would you like to include NUMERIC characters? (If yes, click ok.)'
+);
+
+let hasLowercaseChars = confirm (
+    'Would you like to include LOWERCASE characters? (If yes, click ok.)'
+);
+
+let hasUppercaseChars = confirm (
+    'Would you like to include UPPERCASE characters? (If yes, click ok.)'
+);
+
+if (
+    hasSpecialChars === false &&
+    hasNumericChars === false &&
+    hasLowercaseChars === false &&
+    hasUppercaseChars === false 
+) {
+    alert('You must select at least ONE character type to generate a password.')
+    return;
+}
 
 }
 getOptions();
