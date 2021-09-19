@@ -183,29 +183,21 @@ function getRandomChar(array) {
 
 // Create a function to generate the password that includes the user input; create a variable to store the password as it is being concatenated
 function generatePassword {
+
+   
     let options = getOptions();
+
     let result = [];
+
+     // Create an array to store types of characters included in the password
+    let includedTypeChars = [];
+
+    // Create an array to contain one of each type of chosen character to ensure each will be used
+    let mustHaveChars = [];
 }
 
 getOptions();
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Create a function to generate the password that includes the user input; create a variable to store the password as it is being concatenated
-
-// Create an array to store types of characters included in the password
-
-// Create an array to contain one of each type of chosen character to ensure each will be used
 
 // Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters
 
