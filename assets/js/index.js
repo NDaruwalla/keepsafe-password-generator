@@ -180,6 +180,13 @@ function getRandomChar(array) {
 
     return randomChar;
 }
+
+// Create a function to generate the password that includes the user input; create a variable to store the password as it is being concatenated
+function generatePassword {
+    let options = getOptions();
+    let result = [];
+}
+
 getOptions();
 
 
