@@ -46,7 +46,7 @@ let numericChars = [
     '9'
 ];
 
-let lowerCaseChars = [
+let lowercaseChars = [
     'a',
     'b',
     'c',
@@ -75,7 +75,7 @@ let lowerCaseChars = [
     'z'
 ];
 
-let upperCaseChars = [
+let uppercaseChars = [
     'A',
     'B',
     'C',
@@ -104,8 +104,6 @@ let upperCaseChars = [
     'Z'
 ];
 
-
-
 // Then create function that will prompt the user for password options
 function getOptions () {
     // Create a variable to store the length of the password from the user input
@@ -122,7 +120,6 @@ if (isNaN(length) === true) {
 }
 
 // Create a conditional statement to check if the password length is at least 8 characters long; If it evaluates as false, return an alert for the user to enter a password length of at least 8 characters
-
 if (length < 8) {
     alert('The password length must be 8 or more characters.');
     return;
@@ -143,14 +140,17 @@ let hasNumericChars = confirm (
     'Would you like to include NUMERIC characters? (If yes, click ok.)'
 );
 
+// Create a variable to store a boolean to include lowercase characters
 let hasLowercaseChars = confirm (
     'Would you like to include LOWERCASE characters? (If yes, click ok.)'
 );
 
+// Create a variable to store a boolean to include uppercase characters
 let hasUppercaseChars = confirm (
     'Would you like to include UPPERCASE characters? (If yes, click ok.)'
 );
 
+// Create a conditional statement to check if the user does not include any types of characters. Alert the user that at least one character type must be selected
 if (
     hasSpecialChars === false &&
     hasNumericChars === false &&
@@ -161,18 +161,29 @@ if (
     return;
 }
 
+// Create an object to store the user inputs
+let userSelections = {
+    length: length,
+    hasSpecialChars: hasSpecialChars,
+    hasNumericChars: hasNumericChars,
+    hasLowercaseChars: hasLowercaseChars,
+    hasUppercaseChars: hasUppercaseChars
+};
+
+return userSelections;
+
 }
 getOptions();
 
 
 
-// Create a variable to store a boolean to include lowercase characters
 
-// Create a variable to store a boolean to include uppercase characters
 
-// Create a conditional statement to check if the user does not include any types of characters. Alert the user that at least one character type must be selected
 
-// Create an object to store the user inputs
+
+
+
+
 
 // Create a function for selecting a random element from an array
 
