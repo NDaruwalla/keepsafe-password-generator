@@ -197,10 +197,15 @@ function generatePassword () {
     // Create an array to contain one of each type of chosen character to ensure each will be used
     let mustHaveChars = [];
 
-    // Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters
+    // Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters; do the same for Numeric, Lowercase, and Uppercase characters
     if (options.hasSpecialChars) {
         includedTypeChars = includedTypeChars.concat(specialChars);
-        mustHaveChars.push(getRandom(specialChars));
+        mustHaveChars.push(getRandomChar(specialChars));
+    }
+
+    if (options.hasNumericChars) {
+        includedTypeChars = includedTypeChars.concat(numericChars);
+        mustHaveChars.push(getRandomChar(numericChars));
     }
 }
 
