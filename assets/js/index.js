@@ -235,14 +235,26 @@ return result.join('');
 
 }
 
-
-
-
-
-
-
-
-
 // Get references to the #generate element
+let generatePassword = document.querySelector('#generatePassword');
 
 // Write password to the #password input
+
+function writePassword() {
+    let password = generatePassword();
+    let passwordChars = document.querySelector('#password');
+
+    passwordChars.value = password;
+}
+
+
+
+
+
+
+
+
+
+
+
+
