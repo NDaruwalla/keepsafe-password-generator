@@ -230,6 +230,8 @@ function generatePassword () {
         result[i] = mustHaveChars[i];
     }
 
+// Transform the result into a string and pass into writePassword
+return result.join('');
 
 }
 
@@ -239,7 +241,7 @@ function generatePassword () {
 
 
 
-// Transform the result into a string and pass into writePassword
+
 
 // Get references to the #generate element
 
