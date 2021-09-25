@@ -6,7 +6,6 @@
 // import {getOptions} from './prompt'
 
 
-
 let specialChars = [
     '@',
     '%',
@@ -217,15 +216,28 @@ function generatePassword () {
         includedTypeChars = includedTypeChars.concat(lowercaseChars);
         mustHaveChars.push(getRandomChar(lowercaseChars));
     }
+
+// Create a for loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
+
+    for (let i = 0; i < options.length; i++) {
+        let includedTypeChars = getRandom(includedTypeChars);
+
+        result.push(includedTypeChars);
+    }
+
+// Add at least one of each guaranteed character in the result
+    for (let i = 0; i < mustHaveChars.length; i++) {
+        result[i] = mustHaveChars[i];
+    }
+
+
 }
 
 
 
 
 
-// Create a for loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
 
-// Add at least one of each guaranteed character in the result
 
 // Transform the result into a string and pass into writePassword
 
