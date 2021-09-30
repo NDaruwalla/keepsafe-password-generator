@@ -176,7 +176,7 @@ return userSelections;
 
 // Create a function for selecting a random characters from an array
 function getRandomChar(array) {
-    let randomIndex = Math.floor(math.random() * array.length);
+    let randomIndex = Math.floor(Math.random() * array.length);
     let randomChar = array[randomIndex];
 
     return randomChar;
@@ -197,6 +197,7 @@ function generatePassword () {
     let mustHaveChars = [];
 
     // Create a conditional statement that adds an array of special characters into and array of possible characters based on user input; push new random special character to the array of chosen characters; do the same for Numeric, Lowercase, and Uppercase characters
+
     if (options.hasSpecialChars) {
         includedTypeChars = includedTypeChars.concat(specialChars);
         mustHaveChars.push(getRandomChar(specialChars));
@@ -220,9 +221,9 @@ function generatePassword () {
 // Create a for loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
 
     for (let i = 0; i < options.length; i++) {
-        let includedTypeChars = getRandom(includedTypeChars);
+        let includedTypeChar = getRandomChar(includedTypeChars);
 
-        result.push(includedTypeChars);
+        result.push(includedTypeChar);
     }
 
 // Add at least one of each guaranteed character in the result
@@ -236,7 +237,7 @@ return result.join('');
 }
 
 // Get references to the #generate element
-let generatePassword = document.querySelector('#generatePassword');
+let generateBtn = document.querySelector('#generatePassword');
 
 // Write password to the #password input
 
@@ -247,7 +248,8 @@ function writePassword() {
     passwordChars.value = password;
 }
 
-
+// add an event listener to the generate button
+generateBtn.addEventListener('click', writePassword);
 
 
 
